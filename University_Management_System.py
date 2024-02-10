@@ -109,7 +109,7 @@ class Department(Course): #Department class created
         Department.codeCourseC.append(value)
       elif key[-1] == 'D' and value not in Department.codeCourseD:
         Department.codeCourseD.append(value)
-  def DepartmentDetails(self): #All the courses offered by the respected department will be decleeared using self.subs
+  def DepartmentDetails(self): #All the courses offered by the respected department will be added using self.subs
     if self.dept_name.lower() == 'geography':
       self.subs = Department.codeCourseA
     elif self.dept_name.lower() == 'history':
